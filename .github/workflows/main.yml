@@ -3,7 +3,6 @@ on:
   push:
     tags:
       - "v*"
-  pull_request:
 
 env:
   REGISTRY: ghrc.io # Image registry, ghcr.io incase of GitHub Container Registry
