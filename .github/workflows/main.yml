@@ -1,10 +1,6 @@
 name: "build"
 on:
-  schedule:
-    - cron: "*/1 * * * *"
   push:
-    branches:
-      - main
     tags:
       - "v*"
   pull_request:
