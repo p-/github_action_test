@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.GH_PAT }}
 
       - name: "Build:dockerimage"
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           context: ./docker
           tags: ${{ env.IMAGE_NAME }}:latest, ${{ env.IMAGE_NAME }}:${{ steps.version-bump.outputs.newTag }}
